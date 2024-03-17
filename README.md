@@ -11,7 +11,6 @@ To run the code in this repository, you need:
 - Python (>=3.6)
 - NumPy
 - Matplotlib
-- scikit-learn (for classification example)
 
 ### Installation
 

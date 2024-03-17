@@ -1,3 +1,5 @@
+import numpy as np
+import matplotlib.pyplot as plt 
 class Linear_regression:
   """Implementation of gradient descent and its variants (GD, SGD, MBGD, all with momentum)"""
 
