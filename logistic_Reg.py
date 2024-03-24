@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 class Logistic_Regression:
     def __init__(self,lr,nb_epoch):
         self.lr = lr
@@ -26,7 +29,7 @@ class Logistic_Regression:
 
     def fit(self,x,y):
         x = self.add_ones(x)
-        y = y.reshape((80,1))
+        y = y.reshape((x.shape[0],1))
 
         self.w = np.zeros((x.shape[1],1))
 
@@ -36,6 +39,11 @@ class Logistic_Regression:
             self.w = self.w - self.lr * grad
             loss = self.cross_entropy(x, y)
         self.train_losses.append(loss)
+        
+    def accuracy(self,y_true, y_pred):
+        acc = np.mean(y_true == y_pred) * 100
+        return acc
+
     def plot_decision(self, X, w, b, y):
         # z = w1x1 + w2x2 + w0
         # one can think of the decision boundary as the line x2=mx1+c

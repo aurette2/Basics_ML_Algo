@@ -26,7 +26,12 @@ To run the code in this repository, you need:
     cd Basics_ML_Algo
     ```
 
-3. Install the required dependencies:
+3. Create virtual environnement
+    ```bash
+    python3 -m venv my_env
+    source my_env/bin/activate
+    ```
+4. Install the required dependencies:
 
     ```bash
     pip install -r requirements.txt
