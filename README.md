@@ -46,7 +46,7 @@ python main.py
 ### How to Use the Repository
 Linear_Reg.py: Contains the implementation of linear regression algorithms.
 Logistic_Reg.py: Contains the implementation of logistic regression algorithms.
-PCA.py: (Currently empty) Placeholder for future implementation of PCA algorithm.
+PCA.py: Placeholder for future implementation of PCA algorithm.
 main.py: Script to generate data and test the implemented algorithms.
 LICENSE: MIT License file.
 
